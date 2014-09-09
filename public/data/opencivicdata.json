@@ -6,21 +6,28 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Jurisdiction Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Jurisdictions (levels of Government)",
                     "URI": "/jurisdictions/",
                     "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "Fuzzy name of the Jurisdiction to find",
+                            "Name": "name",
+                            "Required": "N",
+                            "Type": "string"
+                        }
                     ]
                 },
                 {
                     "HTTPMethod": "GET",
                     "MethodName": "Jurisdiction Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on a Jurisdiction by id.",
                     "URI": "/:jurisdiction_id/",
                     "parameters": [
                         {
                             "Default": null,
-                            "Description": "",
+                            "Description": "Jurisdiction ID, such as `ocd-jurisdiction/country:us/state:ma/legislature`",
                             "Name": "jurisdiction_id",
                             "Required": "N",
                             "Type": "string"
@@ -36,16 +43,23 @@
                     "HTTPMethod": "GET",
                     "MethodName": "People Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all People, including current (or past) Memberships.",
                     "URI": "/people/",
                     "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "Fuzzy name of the Person to find",
+                            "Name": "name",
+                            "Required": "N",
+                            "Type": "string"
+                        }
                     ]
                 },
                 {
                     "HTTPMethod": "GET",
                     "MethodName": "Person Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on a Person by id (including current and past Memberships).",
                     "URI": "/:person_id/",
                     "parameters": [
                         {
@@ -66,7 +80,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Vote Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Votes",
                     "URI": "/votes/",
                     "parameters": [
                     ]
@@ -75,7 +89,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Vote Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on a vote by id (including the roll).",
                     "URI": "/:vote_id/",
                     "parameters": [
                         {
@@ -96,16 +110,23 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Event Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Events",
                     "URI": "/events/",
                     "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "Fuzzy name of the Jurisdiction to find",
+                            "Name": "name",
+                            "Required": "N",
+                            "Type": "string"
+                        }
                     ]
                 },
                 {
                     "HTTPMethod": "GET",
                     "MethodName": "Event Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on an Event by id (including all related entities, such as People or Bills).",
                     "URI": "/:event_id/",
                     "parameters": [
                         {
@@ -126,7 +147,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Organizations Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Organizations",
                     "URI": "/organizations/",
                     "parameters": [
                     ]
@@ -135,7 +156,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Organization Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on an Organization by id (including all active Memberships).",
                     "URI": "/:organization_id/",
                     "parameters": [
                         {
@@ -156,7 +177,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Bill Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Bills",
                     "URI": "/bills/",
                     "parameters": [
                     ]
@@ -165,7 +186,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Bill Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on a Bill by id (including all actions, related bills, sponsors and versions).",
                     "URI": "/:bill_id/",
                     "parameters": [
                         {
@@ -186,7 +207,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Division Search",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Fetch a list of all ...",
+                    "Synopsis": "Fetch a list of all Geographical Divisions",
                     "URI": "/divisions/",
                     "parameters": [
                     ]
@@ -195,7 +216,7 @@
                     "HTTPMethod": "GET",
                     "MethodName": "Division Lookup",
                     "RequiresOAuth": "N",
-                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "Synopsis": "Lookup full details on a Division by id.",
                     "URI": "/:division_id/",
                     "parameters": [
                         {
