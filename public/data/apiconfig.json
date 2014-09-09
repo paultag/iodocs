@@ -1,36 +1,26 @@
 {
-    "openstates": {
-        "name": "Open States",
-        "protocol": "http",
-        "baseURL": "openstates.org",
-        "publicPath": "/api/v1/",
-        "headers": {
-            "User-agent": "Sunlight iodocs"
-        },
+    "capitolwords": {
         "auth": "key",
-        "keyParam": "apikey"
-    },
-     "partytime": {
-	    "name": "Political Party Time API",
-	    "protocol": "http",
-	    "baseURL": "politicalpartytime.org",
-	    "publicPath": "/api/v1",
-		"auth": "key",
-		"keyParam": "apikey"
-	},
-
-    "congress": {
-        "name": "Congress",
+        "baseURL": "capitolwords.org",
+        "booleanFalseVal": "false",
+        "booleanTrueVal": "true",
+        "keyParam": "apikey",
+        "name": "Capitol Words",
         "protocol": "http",
+        "publicPath": "/api/1/"
+    },
+    "congress": {
         "baseURL": "congress.api.sunlightfoundation.com",
-        "publicPath": "/",
         "headers": {
             "X-APIKEY": "your_key_here"
-        }
+        },
+        "name": "Congress",
+        "protocol": "http",
+        "publicPath": "/"
     },
-
     "influenceexplorer": {
-        "name": "Influence Explorer",
+        "auth": "key",
+        "baseURL": "transparencydata.com",
         "description": [
             "<h2>Custom Parameter Types</h2>",
             "<p>Some custom parameter types are referenced in this documentation. Each denotes a set of supported behaviors:</p>",
@@ -41,21 +31,39 @@
             "<dd>Comparison fields support range and comparison operators using greater/less than and pipes, for example: <code>&gt;|2000</code> (greater than or equal to 2000), <code>&gt;&lt|1000|5000</code> (between 1000 and 5000).</dd>",
             "</dl><br/>"
         ],
+        "keyParam": "apikey",
+        "name": "Influence Explorer",
         "protocol": "http",
-        "baseURL": "transparencydata.com",
-        "publicPath": "/api/1.0",
-        "auth": "key",
-        "keyParam": "apikey"
+        "publicPath": "/api/1.0"
     },
-
-    "capitolwords": {
-        "name": "Capitol Words",
-        "protocol": "http",
-        "baseURL": "capitolwords.org",
-        "publicPath": "/api/1/",
-        "booleanTrueVal": "true",
-        "booleanFalseVal": "false",
+    "openstates": {
         "auth": "key",
-        "keyParam": "apikey"
+        "baseURL": "openstates.org",
+        "headers": {
+            "User-agent": "Sunlight iodocs"
+        },
+        "keyParam": "apikey",
+        "name": "Open States",
+        "protocol": "http",
+        "publicPath": "/api/v1/"
+    },
+    "opencivicdata": {
+        "auth": "key",
+        "baseURL": "api.opencivicdata.org",
+        "headers": {
+            "User-agent": "Sunlight iodocs"
+        },
+        "keyParam": "apikey",
+        "name": "Open Civic Data",
+        "protocol": "http",
+        "publicPath": "/"
+    },
+    "partytime": {
+        "auth": "key",
+        "baseURL": "politicalpartytime.org",
+        "keyParam": "apikey",
+        "name": "Political Party Time API",
+        "protocol": "http",
+        "publicPath": "/api/v1"
     }
 }

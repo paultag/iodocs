@@ -1,0 +1,214 @@
+{
+    "endpoints": [
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Jurisdiction Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/jurisdictions/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Jurisdiction Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:jurisdiction_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "jurisdiction_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Jurisdictions"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "People Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/people/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Person Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:person_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "person_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "People"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Vote Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/votes/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Vote Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:vote_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "vote_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Votes"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Event Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/events/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Event Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:event_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "event_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Events"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Organizations Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/organizations/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Organization Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:organization_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "organization_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Organizations"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Bill Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/bills/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Bill Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:bill_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "bill_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Bills"
+        },
+        {
+            "methods": [
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Division Search",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Fetch a list of all ...",
+                    "URI": "/divisions/",
+                    "parameters": [
+                    ]
+                },
+                {
+                    "HTTPMethod": "GET",
+                    "MethodName": "Division Lookup",
+                    "RequiresOAuth": "N",
+                    "Synopsis": "Lookup full details on a ... by id (including all ...).",
+                    "URI": "/:division_id/",
+                    "parameters": [
+                        {
+                            "Default": null,
+                            "Description": "",
+                            "Name": "division_id",
+                            "Required": "N",
+                            "Type": "string"
+                        }
+                    ]
+                }
+            ],
+            "name": "Divisions"
+        }
+    ]
+}
